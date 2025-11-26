@@ -1,0 +1,35 @@
+{
+  "name": "portofolioelevated",
+  "version": "1.0.0",
+  "description": "ElevatEd Studio portfolio gallery built with React, Vite, Tailwind, and Anime.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "echo \"lint step not configured\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HisyamAzzahran/portofolioelevated.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HisyamAzzahran/portofolioelevated/issues"
+  },
+  "homepage": "https://github.com/HisyamAzzahran/portofolioelevated#readme",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.13",
+    "vite": "^7.2.4"
+  }
+}
