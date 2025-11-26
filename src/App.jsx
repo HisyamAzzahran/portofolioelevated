@@ -55,6 +55,13 @@ const portfolioItems = [
     image: "/juara/Famposo.webp",
   },
   {
+    title: "Grant Funding – Unpadpreneur",
+    detail: "Pendanaan hibah hingga 4 juta untuk akselerasi produk awal.",
+    tags: ["Funding", "Unpadpreneur", "Early Stage"],
+    stat: "IDR 4M grant",
+    image: "/juara/funding.jpeg",
+  },
+  {
     title: "Community – @elevated.indonesia",
     detail: "Lebih dari 6.000 followers dengan 1.1M total views.",
     tags: ["Community", "Brand Awareness", "Content"],
@@ -446,8 +453,8 @@ const ElevatEdPortfolio = () => {
       <style>
         {`
         @keyframes marqueeRight {
-          0% { transform: translateX(-30%); }
-          100% { transform: translateX(30%); }
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
         }
         @keyframes slideDown {
           0% { transform: translateY(-8px); opacity: 0; }
@@ -537,6 +544,15 @@ const ElevatEdPortfolio = () => {
               <p className="text-base text-slate-300 sm:text-lg">
                 A gallery of competition victories, startup milestones, and community growth. Explore how ElevatEd Indonesia builds education, innovation, and impact-first experiences.
               </p>
+              <a
+                href="https://instagram.com/elevated.indonesia"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-100 ring-1 ring-sky-500/30 transition hover:bg-white/10"
+              >
+                <span className="h-2 w-2 rounded-full bg-emerald-400" />
+                <span>@elevated.indonesia</span>
+              </a>
             </div>
             <div className="flex flex-wrap gap-4 hero-cta">
               <a
@@ -649,17 +665,29 @@ const ElevatEdPortfolio = () => {
             subtitle="Kepercayaan dari berbagai institusi, kampus, dan program yang tumbuh bersama ElevatEd."
           />
           <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-900/70 p-6 backdrop-blur">
-            <div className="overflow-hidden">
-              <div className="flex animate-[marqueeRight_18s_linear_infinite] gap-8">
+            <div className="mb-4 flex items-center justify-end text-sm text-slate-200">
+              <a
+                href="https://instagram.com/elevated.indonesia"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-sky-100 ring-1 ring-sky-400/30 transition hover:bg-white/10"
+              >
+                <span className="h-2 w-2 rounded-full bg-emerald-400" />
+                <span>@elevated.indonesia</span>
+              </a>
+            </div>
+            <div className="relative h-32 overflow-hidden">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-slate-900 via-transparent to-slate-900" />
+              <div className="flex min-w-max animate-[marqueeRight_26s_linear_infinite] gap-6">
                 {[...partners, ...partners].map((src, idx) => (
                   <div
                     key={`${src}-${idx}`}
-                    className="flex h-20 w-40 items-center justify-center rounded-xl bg-white/5 p-3 ring-1 ring-slate-700/60"
+                    className="flex h-24 w-48 items-center justify-center rounded-2xl bg-white/5 p-4 ring-1 ring-slate-700/60 shadow-inner shadow-slate-900/40"
                   >
                     <img
                       src={src}
                       alt="Mitra"
-                      className="max-h-full max-w-full object-contain opacity-90"
+                      className="max-h-full max-w-full object-contain opacity-95"
                     />
                   </div>
                 ))}
