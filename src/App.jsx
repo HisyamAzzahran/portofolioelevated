@@ -5,69 +5,68 @@ const filters = ["All", "Competition", "Funding", "Partnership", "Community"];
 
 const portfolioItems = [
   {
-    title: "Active Instagram Community @elevated.indonesia",
-    detail: "More than 6,000 followers and 1.1M total views.",
-    tags: ["Community", "Brand Awareness", "Content Strategy"],
-    stat: "6,000+ followers",
-    image: "/juara/jndnla.jpeg",
+    title: "Grand Prize – SheConnect Champion by Indosat",
+    detail:
+      "Juara utama SheHacks dengan solusi pemberdayaan perempuan dan inklusi digital.",
+    tags: ["Competition", "Indosat", "SheHacks"],
+    stat: "Grand Prize",
+    image: "/juara/shehack.jpg",
   },
   {
-    title: "1st Place – Startup SheHacks by Indosat",
-    detail:
-      "Winner of SheHacks program with a startup solution for women empowerment and digital inclusion.",
-    tags: ["Competition", "Startup", "Indosat"],
-    stat: "1st place",
+    title: "3rd Place – Baligivation by Bank Indonesia",
+    detail: "Top 3 inovasi digital Baligivation (Bank Indonesia).",
+    tags: ["Competition", "Bank Indonesia", "Digital Innovation"],
+    stat: "Juara 3",
+    image: "/juara/baligivation.jpeg",
+  },
+  {
+    title: "People's Choice – WSU Innovation Challenge",
+    detail: "Dipilih publik pada AI Innovation Challenge Western Sydney University.",
+    tags: ["AI", "International", "Competition"],
+    stat: "People's Choice",
     image: "/juara/WSU_019.jpg",
   },
   {
-    title: "3rd Place – Digital Innovation Baligivation by Bank Indonesia",
-    detail: "Top 3 for digital innovation in Baligivation by Bank Indonesia.",
-    tags: ["Fintech", "Digital Innovation", "Bank Indonesia", "Competition"],
-    stat: "Top 3",
-    image: "/juara/kmcm.jpg",
-  },
-  {
-    title: "3rd Place – AI Innovation Challenges by Western Sydney University",
-    detail:
-      "AI based solution selected as Top 3 in an international innovation challenge.",
-    tags: ["AI", "International", "Innovation", "Competition"],
+    title: "Top 3 – WSU AI Innovation Challenge",
+    detail: "Solusi AI menembus 3 besar di ajang Western Sydney University.",
+    tags: ["AI", "International", "Competition"],
     stat: "Top 3",
     image: "/juara/WSU_477.jpg",
   },
   {
-    title: "Top 10 – SANDINATION Startup by Sandiaga Uno",
-    detail: "Selected as Top 10 startup in SANDINATION curated by Sandiaga Uno.",
-    tags: ["Top 10", "Startup Ecosystem", "National", "Competition"],
+    title: "Top 10 – SANDINATION by Sandiaga Uno",
+    detail: "Masuk 10 besar startup pilihan di SANDINATION.",
+    tags: ["Competition", "National", "Startup"],
     stat: "Top 10",
-    image: "/juara/mkw.jpeg",
+    image: "/juara/sandination.jpeg",
   },
   {
-    title: "Top 10 – Startup World Cup by Vegasus VC",
-    detail: "Reached Top 10 in Startup World Cup selection by Vegasus VC.",
-    tags: ["Global Stage", "Venture Capital", "Pitching", "Competition"],
+    title: "Top 10 – Startup World Cup Selection",
+    detail: "Lolos seleksi 10 besar Startup World Cup regional.",
+    tags: ["Global Stage", "Pitching", "Competition"],
     stat: "Top 10",
+    image: "/juara/startupworld.jpeg",
+  },
+  {
+    title: "Spark50 Cohort – Famposo VC",
+    detail: "Terpilih dalam Spark50 program oleh Famposo VC.",
+    tags: ["Venture Program", "Growth", "Competition"],
+    stat: "Cohort",
     image: "/juara/Famposo.webp",
   },
   {
-    title: "Top 10 – Spark50 by Famposo VC",
-    detail: "Recognized as Top 10 startup in Spark50 program by Famposo VC.",
-    tags: ["Venture Program", "Top 10", "Growth", "Competition"],
-    stat: "Top 10",
-    image: "/juara/kmlkmlcd.jpeg",
+    title: "Community – @elevated.indonesia",
+    detail: "Lebih dari 6.000 followers dengan 1.1M total views.",
+    tags: ["Community", "Brand Awareness", "Content"],
+    stat: "6,000+ followers",
+    image: "/juara/jndnla.jpeg",
   },
   {
-    title: "Grant Funding up to 4 Million – Unpadpreneur",
-    detail: "Received grant funding up to 4 million from Unpadpreneur.",
-    tags: ["Funding", "Unpadpreneur", "Early Stage"],
-    stat: "IDR 4M grant",
-    image: "/juara/lml.jpeg",
-  },
-  {
-    title: "Startup Partner – Universitas Padjadjaran",
-    detail: "Official startup partner collaborating with Universitas Padjadjaran.",
-    tags: ["Partnership", "Universitas Padjadjaran", "Collaboration"],
+    title: "Partnership – Universitas Padjadjaran",
+    detail: "Kolaborasi resmi dan program bersama Universitas Padjadjaran.",
+    tags: ["Partnership", "Universitas", "Collaboration"],
     stat: "Partnered",
-    image: "/juara/llclmdml.jpeg",
+    image: "/juara/unpadpartner.jpeg",
   },
 ];
 
@@ -129,12 +128,12 @@ const partners = [
 ];
 
 const heroTiles = [
-  { title: "SheHacks Winner", caption: "Indosat", image: "/juara/WSU_019.jpg" },
+  { title: "SheHacks Winner", caption: "Indosat", image: "/juara/shehack.jpg" },
   { title: "AI Innovation", caption: "Western Sydney University", image: "/juara/WSU_477.jpg" },
-  { title: "Digital Innovation", caption: "Bank Indonesia", image: "/juara/kmcm.jpg" },
-  { title: "Spark50", caption: "Famposo VC", image: "/juara/kmlkmlcd.jpeg" },
-  { title: "SANDINATION", caption: "Sandiaga Uno", image: "/juara/mkw.jpeg" },
-  { title: "World Cup", caption: "Vegasus VC", image: "/juara/Famposo.webp" },
+  { title: "Digital Innovation", caption: "Bank Indonesia", image: "/juara/baligivation.jpeg" },
+  { title: "Spark50", caption: "Famposo VC", image: "/juara/Famposo.webp" },
+  { title: "SANDINATION", caption: "Sandiaga Uno", image: "/juara/sandination.jpeg" },
+  { title: "Startup World Cup", caption: "Global Stage", image: "/juara/startupworld.jpeg" },
 ];
 
 const Tag = ({ children }) => (
@@ -650,26 +649,20 @@ const ElevatEdPortfolio = () => {
             subtitle="Kepercayaan dari berbagai institusi, kampus, dan program yang tumbuh bersama ElevatEd."
           />
           <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-900/70 p-6 backdrop-blur">
-            <div className="flex items-center gap-3 text-sm text-slate-300">
-              <div className="h-2 w-2 rounded-full bg-emerald-400" />
-              <span>Gerak ke kanan dan looping</span>
-            </div>
-            <div className="mt-6">
-              <div className="overflow-hidden">
-                <div className="flex animate-[marqueeRight_18s_linear_infinite] gap-8">
-                  {[...partners, ...partners].map((src, idx) => (
-                    <div
-                      key={`${src}-${idx}`}
-                      className="flex h-20 w-40 items-center justify-center rounded-xl bg-white/5 p-3 ring-1 ring-slate-700/60"
-                    >
-                      <img
-                        src={src}
-                        alt="Mitra"
-                        className="max-h-full max-w-full object-contain opacity-90"
-                      />
-                    </div>
-                  ))}
-                </div>
+            <div className="overflow-hidden">
+              <div className="flex animate-[marqueeRight_18s_linear_infinite] gap-8">
+                {[...partners, ...partners].map((src, idx) => (
+                  <div
+                    key={`${src}-${idx}`}
+                    className="flex h-20 w-40 items-center justify-center rounded-xl bg-white/5 p-3 ring-1 ring-slate-700/60"
+                  >
+                    <img
+                      src={src}
+                      alt="Mitra"
+                      className="max-h-full max-w-full object-contain opacity-90"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
